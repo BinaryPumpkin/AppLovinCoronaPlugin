@@ -21,6 +21,8 @@ local function listenerFunc(event)
     -- BP: Interstitial Loaded
   elseif event.phase == "notAvailable" then
     -- BP: Interstitial not available ... need to update plugin to pass error code.
+  elseif event.phase == "displayed" then
+    -- BP: Interstitial shown.
   elseif event.phase == "closed" then
     -- BP: The user selected the close button; if you wish to track num ads skipped.
   elseif event.phase == "clicked" then
