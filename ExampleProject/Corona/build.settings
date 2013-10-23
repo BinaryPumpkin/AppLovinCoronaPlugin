@@ -1,0 +1,24 @@
+-- Supported values for orientation:
+-- portrait, portraitUpsideDown, landscapeLeft, landscapeRight
+
+settings = {
+
+	plugins = {
+		["plugin.apprever"] = {publisherId = "com.apprever"},
+		["plugin.tapfortap"] = {publisherId = "com.tapfortap"},
+		["CoronaProvider.ads.vungle"] = {publisherId = "com.vungle"},
+	},
+
+	orientation = {
+		default = "portrait",
+		supported = {"portrait"}
+	},
+
+	iphone = {
+		plist = {
+			UIStatusBarHidden = true,
+			UIPrerenderedIcon = true,
+			CFBundleIconFile = "Icon.png",
+		}
+	},
+}
